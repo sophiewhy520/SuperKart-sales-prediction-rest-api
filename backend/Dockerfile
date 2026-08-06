@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy all files from the current directory to the container's working directory
-COPY . . 
+COPY . .
 
 # Install dependencies from the requirements file without using cache to reduce image size
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
